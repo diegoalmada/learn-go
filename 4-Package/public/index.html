@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn Go - Servidor de Arquivos</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif; margin: 2rem; line-height: 1.55; }
+    h1 { margin-top: 0; }
+    code { background: rgba(127,127,127,.15); padding: 0.15rem 0.35rem; border-radius: 4px; }
+    a { color: #0b5ed7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; height: 1px; background: rgba(127,127,127,.35); margin: 1.5rem 0; }
+    .hint { opacity: .85; }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo 👋</h1>
+  <p>Esta é a página inicial servida a partir de <code>./public/index.html</code>.</p>
+  <p class="hint">Para executar o servidor de arquivos estático, rode: <code>go run fileserver.go</code> e acesse <a href="/4-Package/public">http://localhost:8080/</a>.</p>
+  
+  <hr>
+  <h2>Outros exemplos no projeto</h2>
+  <ul>
+    <li>
+      Servidor HTTP (busca CEP):
+      <div class="hint">
+        1) <code>go run server.go</code><br>
+        2) Acesse: <code>http://localhost:8082/?zipcode=01001000</code>
+      </div>
+    </li>
+    <li>
+      Cliente HTTP de exemplo: <code>go run http.go</code> (imprime o HTML do Google no console)
+    </li>
+  </ul>
+  
+  <p class="hint">Dica: edite este arquivo para alterar o conteúdo servido pelo <code>FileServer</code>.</p>
+</body>
+</html>
